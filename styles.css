@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(20, 63, 220), rgb(17,54,71));
+    font-family: Helvetica, sans-serif;
+}
+div{
+    margin: 1rem 0 1rem;
+}
+
+.container{
+    color: white;
+    top: 20%;
+    left: 20%;
+    flex-direction: column; 
+    transform: translate(30%, 10% );
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 1rem;
+    border-radius: 0.9rem;
+    width: 60%;   
+    
+}
+
+fieldset{
+    border: 0.2rem solid dodgerblue;
+    border-radius: .6rem;
+}
+legend{
+    
+    padding: 1rem;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 0.5rem;
+}
+.form-control{
+    position: relative;
+   
+}
+#styleInput{
+    margin-bottom: .5rem;
+    background: none;
+    border: none;
+    border-bottom: 0.16rem solid white;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    letter-spacing: 0.1rem;
+}
+ .labelInput{
+
+    display: block;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#styleInput:focus ~ .labelInput,
+#styleInput:valid ~ .labelInput{
+    display: inline-block;
+    top: -1.25rem;
+    font-size: .75rem;
+    color: dodgerblue;
+} 
+
+.radioButton, select{ 
+    display:block;
+    margin-bottom: 1.5rem;  
+}
+.insertDate{
+    position: relative;
+    bottom: 0.2rem;
+    border: none;
+    padding: .2rem;
+    border-radius: 5rem;
+    font-size: .8rem;
+}
+
+.otherName,.nameTelecode, .otherCountry, .cityState, .otherCountryBirth,.spouse, .cityStateSpouse,
+.stateExSpouseElement, .otherCountrySpouse,.exSpouse, .otherCountryExSpouse,.cityStateExSpouse,
+.countryResidence,.otherPassportNumber, .socialSecurityNumber, .idContributorNumber,.travelItinerary,
+.dateOfIntentionTravel,.contactUS, .sponsor, .sponsorAddress, .travelersList,.organiozationTravel,
+.organizationName,.addAnotherTraveler, .travelUsa,.addPreviousTrip,.drivingLicense,.drivingLicenseNumber,
+.visaNumber,.lostVisa, .canceledVisa,.visaDenied,.immigrantPetition,.otherNumberTel,.otherAddresEmail,
+.insertSocialMedia,.addOtherSocialMedia, .addOtherTel,.addOtherEmail,.numberPassport,.countryPassport,
+.countryFrommPassport,.passportAnotherCountry,.applyForPassport,.stolenPassport,.fatherInUsa,.motherInUsa,
+.relativeInUsa,.work,.professionInBrazil,.professionAbroad,.school,.previousWork,.penultimateWork,.faculty,
+.otherFaculty,.anotherLanguage, .addAnotherLang,.weaponSkill,.travelToOtherContries,.addTravelToOtherContries,
+.charityOrganization,.addAnotherCharityOrganization,.militaryService,.illegalInTheUS, .deported,.studiedWithB2Visa,
+.incomeTax, .cashReserve, .contactStudent{
+    display: none;
+}
+
+
+
+
+.gender, .anotherNationality, .otherPassport, 
+.residentOfAnotherCountry, .socialSecurity,
+.idNumberEua{
+    margin: 1rem;
+}
+
+small{
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    font-size: 1rem;
+    color: rgb(253, 23, 23);
+    opacity: 0;
+}
+ .inputControl.error small{
+    opacity: 1;
+}
+.inputNumControl.error small{
+    opacity: 1;
+}
+
+a{
+    color: white;
+}
+
+button{
+    background: linear-gradient(to right, rgb(0, 92, 197), rgb(90,20,220));
+    font-size: 1rem;
+    position: relative;
+    left: 60rem;
+    border: none;
+    width: 5rem;
+    
+    padding: .4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    } 
+
+
+.addField, .removeField{
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.relationshipTraveler{
+    position: relative;
+    bottom: 1rem;
+}
+
+
+.inputDateTravelUsa{
+    position: relative;
+    width: 1.6rem;
+    left: 17.2rem;
+}
+.labelDateTravelUsa{
+    color:darkcyan;
+    position: relative;
+    right: 1.8rem;
+}
+.errorDateTravelUsa{
+    left: 24.2rem;
+    top: .1rem;
+} 
+.travelPeriod{
+    position: relative;
+    bottom: 2.15rem;
+    left: 19.5rem;
+}
+
+.addOtherTravel{
+    position: relative;
+    bottom: 2rem;
+}
+
+.addTraveler,.removeTraveler,.addTravel,.removeTravel,.addTel, .removeTel, .addSM,
+.removeSM, .addEmail,.removeEmail, .removeLang, .addLang,.addCountry, .removeCountry,
+.addCharityOrganization,.removeCharityOrganization{
+    font-size: .8rem;
+    display: inline;
+    margin-right: .3rem;
+    position: relative;
+    bottom: 1.2rem;
+    color: aquamarine;
+}
+h4{
+    color:darkcyan
+}
+
+#submit{
+    font-size: 1rem;
+    position: relative;
+    left: 40rem;
+    border: none;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80,19,195));
+}
+
