@@ -846,7 +846,7 @@ if(isset($_POST['action'])){
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send t<hr>ough
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = 'luizvagnerdev@gmail.com';                     //SMTP username
-        $mail->Password   = 'zberjmsdqdioqobh';                               //SMTP password
+        $mail->Password   = ''
         $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer:</h3>:ENCRYPTION_STARTTLS`
         //$mail->SMTPAutoTLS = false;  
